@@ -4,7 +4,7 @@ module.exports = {
         extend: {
             colors: {
                 "slate-800": "rgb(29,33,68)",
-                "backgrount-input": "rgb(36,43,81)",
+                "backgrount-input": "rgb(115, 120, 156)",
                 "gray-dark": "rgba(74,108,247,.1)",
                 "dark": "rgb(9, 14, 52)"
             }, boxShadow: {
