@@ -8,10 +8,24 @@
     <meta name="author" content="pengu_da_penguin">
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon"/>
     <link rel="stylesheet" href="./css/output.css">
-    <title>Silver Guidance</title>
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
 
+        .nav-list {
+            animation: fadeIn 1s ease-out; /* Adjust the duration and timing function as needed */
+            animation-fill-mode: forwards; /* Keeps the final state of the animation */
+        }
+    </style>
+    <title>Silver Guidance</title>
 </head>
-<body class="bg-white dark:bg-dark seceltion font-Ubuntu">
+<body class="bg-white dark:bg-dark selection font-Ubuntu">
 <div class="fixed top-0 left-0 z-50 w-full">
     <div class="px-4 py-4 lg:px-8 lg:py-1" id="header">
         <div class="flex items-center justify-between">
@@ -20,7 +34,7 @@
             </div>
             <div class="navigation hidden lg:block">
                 <nav>
-                    <ul class="flex items-center justify-between">
+                    <ul class="flex items-center justify-between nav-list">
                         <li class="px-6 py-4"><a href="#slider" class="menu-item">Home</a></li>
                         <li class="px-6 py-4"><a href="#features" class="menu-item">Our Work</a></li>
                         <li class="px-6 py-4"><a href="#support" class="menu-item">Support</a></li>
@@ -29,6 +43,9 @@
                     </ul>
                 </nav>
             </div>
+        </div>
+    </div>
+</div>
             <div class="panel flex items-center">
                 <a href="" class="btn cursor-pointer text-neutral-900 py-3 px-2 hidden lg:block">sign in</a>
                 <a href="" class="btn cursor-pointer bg-[#4a6cf7] mr-6 py-3 hidden lg:block">sign Up</a>
